@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Dash</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Galaxy Arcade</p>
+        <h1>Space Dash</h1>
+      </div>
+    </header>
+
+    <main class="main-layout">
+      <aside class="left-sidebar">
+        <div class="panel">
+          <p class="panel-title">Mission Brief</p>
+          <p>Use arrow keys or WASD to steer the starship through the nebula. Collect stars to grow your score while avoiding asteroids.</p>
+          <p class="hint">Press <strong>Enter</strong> or Start to begin.</p>
+        </div>
+        <div class="panel controls-panel">
+          <p class="panel-title">Controls</p>
+          <p><strong>Move:</strong> Arrow keys / WASD</p>
+          <p><strong>Start:</strong> Enter</p>
+          <p><strong>Reset:</strong> Button below</p>
+        </div>
+      </aside>
+      <section class="game-area">
+        <div class="game-card">
+          <canvas id="gameCanvas" width="720" height="480"></canvas>
+        </div>
+      </section>
+      <aside class="right-sidebar">
+        <div class="panel status-panel">
+          <div><span>Score</span><strong id="score">0</strong></div>
+          <div><span>High Score</span><strong id="highScore">0</strong></div>
+          <div><span>Level</span><strong id="level">1</strong></div>
+          <div><span>Lives</span><strong id="lives">3</strong></div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer-bar">
+      <button id="startButton" class="primary">Start Game</button>
+      <button id="resetButton">Reset</button>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
